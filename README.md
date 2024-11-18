@@ -2,4 +2,24 @@ The project essentially consists of a credit card simulator, designed to help us
 
 To achieve this, the project is structured around three main components. First, there is the credit card, which represents the outstanding balance, credit limit, and annual interest rate. This card is the core of financial operations, as it manages interest calculations and maintains a record of each purchase or payment. Second, each card transaction is saved as a separate event, allowing for a detailed history of each purchase and payment, which helps users analyze their activities in an organized way. Finally, the user, as the cardholder, can interact with the card, perform purchase or payment operations, and review the statement to stay updated on their balance. 
 
+Class User: 
+Purpose:
+It represents the users of the system, who will be owners of the credit cards. This class centralizes basic user information, such as name and address. 
+
+Class Transaction: 
+Purpose:
+Record and manage transactions made with the card, such as purchases or payments. This allows for a detailed trading history.
+
+Class CreditCard: 
+Purpose:
+Manages credit card financial operations, such as purchases, payments, balance calculation, and maintains a transaction history.
+
+Class InterestManager:
+Purpose:
+Calculate and apply monthly interest, also apply additional charges such as late or overflow fees
+
+Class Simulator:
+Purpose:
+Orchestrate interactions between user, credit card and interest manager. Simulate a flow of operations such as purchases, payments and application of charges.
+
 ![Credit Card Simulator drawio](https://github.com/user-attachments/assets/b0552f79-c47f-432c-9b3a-216bcf6baf62)
