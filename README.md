@@ -4,7 +4,7 @@ To achieve this, the project is structured around three main components. First, 
 
 Class User: 
 Purpose:
-It represents the users of the system, who will be owners of the credit cards. This class centralizes basic user information, such as name and address. 
+It represents the users of the system, who will be owners of the credit cards. This class centralizes basic user information, such as name and age. 
 
 Class Transaction: 
 Purpose:
