@@ -22,6 +22,7 @@ Class Simulator:
 Purpose:
 Orchestrate interactions between user, credit card and interest manager. Simulate a flow of operations such as purchases, payments and application of charges.
 
-![CreditCardProject drawio](https://github.com/user-attachments/assets/3910fa2e-309f-46c8-ba1f-a942c4c59746)
+![CreditCardProject drawio (1)](https://github.com/user-attachments/assets/2e125c99-6038-4068-8690-bb46528e3121)
+
 
 
