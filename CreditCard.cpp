@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-CreditCard::CreditCard(double_limit){
+CreditCard::CreditCard(double limit){
     creditLimit = _limit
     balance = 0
 }
