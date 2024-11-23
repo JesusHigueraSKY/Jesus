@@ -1,28 +1,21 @@
-The project essentially consists of a credit card simulator, designed to help users understand how debt accumulates and is paid off on a credit card. The main idea is for the simulator to allow users to perform similar operations to a real credit card: record purchases and payments, calculate monthly accrued interest, and display a detailed statement that reflects the current balance and transaction history. This type of simulator is useful for visualizing how interest impacts the balance and how payments affect the debt over time.
+The program simulates a simple card management system for a user. The idea is to create a system where a user can own multiple cards (credit and debit), view their details, and perform transactions using these cards. The user can add cards (credit or debit) to their account, view details of all the cards they own, simulate purchases using the cards, if it is a credit card, the system checks whether the purchase exceeds the card’s credit limit, if it is a debit card, the system checks whether there is sufficient balance in the account to complete the purchase. Additionally, the program ensures that all transactions are recorded, including the card type used, the transaction amount, and whether the transaction was successful. 
 
-To achieve this, the project is structured around three main components. First, there is the credit card, which represents the outstanding balance, credit limit, and annual interest rate. This card is the core of financial operations, as it manages interest calculations and maintains a record of each purchase or payment. Second, each card transaction is saved as a separate event, allowing for a detailed history of each purchase and payment, which helps users analyze their activities in an organized way. Finally, the user, as the cardholder, can interact with the card, perform purchase or payment operations, and review the statement to stay updated on their balance. 
+User: 
+Purpose: The User class represents a customer who owns one or more cards. It is responsible for managing the user's information (such as their name) and their own cards. 
 
-Class User: 
-Purpose:
-It represents the users of the system, who will be owners of the credit cards. This class centralizes basic user information, such as name and age. 
+Card: 
+Purpose: The Card class is an abstract base class that defines common properties and methods for all types of cards (credit and debit). It is not meant to be instantiated directly but serves as a blueprint for derived classes. 
 
-Class Transaction: 
-Purpose:
-Record and manage transactions made with the card, such as purchases or payments. This allows for a detailed trading history.
+CreditCard: 
+Purpose: The CreditCard class is derived from the Card class and represents a credit card. It manages the card's balance, credit limit, and allows for making purchases that either increase the balance (on credit) or decrease the available credit. 
 
-Class CreditCard: 
-Purpose:
-Manages credit card financial operations, such as purchases, payments, balance calculation, and maintains a transaction history.
+DebitCard:
+Purpose: The DebitCard class is also derived from the Card class and represents a debit card. It handles the card’s balance, which is directly linked to the user's available funds, and allows for purchases that reduce the available balance.
 
-Class InterestManager:
-Purpose:
-Calculate and apply monthly interest, also apply additional charges such as late or overflow fees
+Transaction: 
+Purpose: The Transaction class is designed to represent individual transactions made using a credit or debit card. It encapsulates details about the transaction, such as the amount, type of transaction (purchase), and the card used.
 
-Class Simulator:
-Purpose:
-Orchestrate interactions between user, credit card and interest manager. Simulate a flow of operations such as purchases, payments and application of charges.
-
-![CreditCardProject drawio (1)](https://github.com/user-attachments/assets/2e125c99-6038-4068-8690-bb46528e3121)
+![CreditCardProject drawio (2)](https://github.com/user-attachments/assets/2ac646a7-d1ae-4e38-9411-c67f332cee93) 
 
 
 
